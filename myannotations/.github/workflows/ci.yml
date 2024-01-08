@@ -41,8 +41,8 @@ jobs:
 
     - name: Push changes to GitHub
       run: |
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Actions"
+        git config --global user.email "jimmykoumako@yahoo.com"
+        git config --global user.name "Jimmykoumako"
         git add .
         git commit -m "CI: Build and deploy"
         git push origin main
