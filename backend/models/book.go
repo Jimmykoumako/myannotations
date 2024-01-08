@@ -1,12 +1,14 @@
-// models/book.go
-
 package models
 
 import "github.com/jinzhu/gorm"
 
-// Book represents the Book model in the database.
+// Book model
 type Book struct {
-    gorm.Model
-    Title  string `json:"title"`
-    Author string `json:"author"`
+   gorm.Model
+   Title  string `gorm:"not null"`
+   Author string `gorm:"not null"`
+   ISBN   string `gorm:"unique;not null"`
+   UserID uint
+   User   User // Belongs to a user
+   Texts  []Text // Book has many texts
 }
