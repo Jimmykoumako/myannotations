@@ -45,4 +45,4 @@ jobs:
         git config --global user.name "Jimmykoumako"
         git add .
         git commit -m "CI: Build and deploy"
-        git push origin main
+        git push origin master
