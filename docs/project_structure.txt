@@ -1,0 +1,1711 @@
+--- Folder Structure ---
+[.git]
+    ├── COMMIT_EDITMSG
+    ├── FETCH_HEAD
+    ├── HEAD
+    ├── ORIG_HEAD
+    ├── [branches]
+    ├── config
+    ├── description
+    ├── [hooks]
+        ├── applypatch-msg.sample
+        ├── commit-msg.sample
+        ├── fsmonitor-watchman.sample
+        ├── post-update.sample
+        ├── pre-applypatch.sample
+        ├── pre-commit.sample
+        ├── pre-merge-commit.sample
+        ├── pre-push.sample
+        ├── pre-rebase.sample
+        ├── pre-receive.sample
+        ├── prepare-commit-msg.sample
+        ├── push-to-checkout.sample
+        └── update.sample
+    ├── index
+    ├── [info]
+        └── exclude
+    ├── [logs]
+        ├── HEAD
+        └── [refs]
+            ├── [heads]
+                └── master
+            └── [remotes]
+                └── [origin]
+                    ├── main
+                    └── master
+    ├── [objects]
+        ├── [04]
+            └── 8c7f1df020fb98e0a18ceb17adf196f512e1de
+        ├── [07]
+            └── e6e472cc75fafa944e2a6d4b0f101bc476c060
+        ├── [0c]
+            └── 20292806a9a5f6f279e60c5c84b3a0842b5b27
+        ├── [0f]
+            └── ae45b08c0200e02de1d2a57c974f2c400d2ba1
+        ├── [23]
+            └── 2704a1358267554f0566fcd299fe2b890e8614
+        ├── [28]
+            └── c51536d22c60fcaa90243d08c61d220511dc41
+        ├── [2d]
+            ├── 326f1cefed113d26aa0354be440e81176e7aaf
+            └── 3eaae6ae5aec8b0936d506b9cbb3f002b7a29e
+        ├── [33]
+            └── 6efe239294f63109673262ea5f4a6f33019ab4
+        ├── [37]
+            └── c87bd662c6d3bfa6a4049a32a237ea15a46379
+        ├── [39]
+            ├── 5da4b51a56475ec77abcb143356fdd5d469c5a
+            └── e97846721a14ba18ee44b5eb0570771ca08da5
+        ├── [3a]
+            ├── 903f2eede8ba5d45b365d3b9f6fe80bf4f9e1f
+            └── f4e9a3a4ee2dfde63bb5e492289cab5813cb64
+        ├── [42]
+            └── f521f913e34409f72a68a2440a1040dcd36f77
+        ├── [45]
+            └── 499345c432b73184a5f79fe952043fa8b5de9d
+        ├── [46]
+            └── 9e1f7e201f98a577b0b3dc9fab4edff3fbfb61
+        ├── [47]
+            └── 4ea65cfab453d578988a29db44743e6caf31ab
+        ├── [48]
+            └── 20b4df661f803d7781fbe7c8e5ec9524ae06ea
+        ├── [4c]
+            └── 2d39daf1c702158ce65e117a0e9aa9d25a5fae
+        ├── [51]
+            └── 139600d75cfecf31c3ab7d87ff71b4b4805574
+        ├── [53]
+            └── 628a74c665890ee23b0ce9e5949e30e52a5735
+        ├── [59]
+            └── 7df95959ce6ece24d24a3124544ddbc031d1c2
+        ├── [5b]
+            └── c46a8dd932a39239945a2d5dd1a780fce88332
+        ├── [5d]
+            └── 9045752d6194b0fa06f137f76004557738a940
+        ├── [63]
+            ├── 2cd6af9cb5b5a2ce6117c13327f466f82ecb51
+            └── adca457dd9efb87aedb50269b5478bafaafed5
+        ├── [69]
+            └── cbbe048f913d9fb46153a398550b052f72e9ac
+        ├── [6a]
+            ├── 557fd837fff7b6b6952137500aacdbf3bc937b
+            └── be6740425365601b8a29049ced6997af65d19e
+        ├── [6d]
+            └── ed4fef61393915d71fb6c999761a0b5845b3f9
+        ├── [78]
+            └── bfb19ba733ab712ebe6aa3bf36a20064d159e4
+        ├── [79]
+            └── 78e8e62388617f856fd3179b351d12f626fb76
+        ├── [7d]
+            └── ea33aed8b1b6712914b6e1ba438b74dacf4072
+        ├── [8a]
+            └── 307d9e53294fba8f22f026e9f29eda4e9e1b7e
+        ├── [91]
+            └── 561ad4d58fae1763c12c56f1de3f7cd6840235
+        ├── [96]
+            └── 9bdae54aa9647137fb887a3236d140d30922cb
+        ├── [97]
+            └── 5b94a0f8c2c2515e2b24e8e4f7c50210d8e6c9
+        ├── [98]
+            └── 9954414813bff89a3f0e1e303473b2a5ce8575
+        ├── [9a]
+            └── fbe41de10dfac53cc6f5eab29e2b256d2a8cd4
+        ├── [a8]
+            └── a54e758b26628431b9c0e9c801438a11d368b9
+        ├── [af]
+            └── f0dcf6d187df23396c80c06c57d045b706b3a1
+        ├── [b3]
+            └── bd43c96a6a6d9816503c8741b309e41cbce05c
+        ├── [b9]
+            └── 05f9aa398fbdd582521defb881d861859d1072
+        ├── [ba]
+            └── 0f0407881dfdaff37d1c202fc1c3cedc88ad29
+        ├── [bc]
+            └── a8fb62dd0a943eb8ad9f8d48d2060e66743b2b
+        ├── [bd]
+            ├── 2027e1b9625c1ae791d3ad0bbf1a6799791f3e
+            └── 5ddefbe8dcf13a197f38b31cc606e5cfe10ead
+        ├── [be]
+            └── 7d8ccf4fc7d1c08b42269b9e667b7d14fdbefd
+        ├── [c5]
+            └── 3fa7a3ae087d28002bf96da41d46ffd72ef704
+        ├── [c8]
+            └── 0052959c25fe0777fa011387f70af07b7bc47e
+        ├── [cc]
+            ├── 0ec06a8e45a781d6edf9067c8d8c3be18ce47f
+            └── 7e9911304c4a62be18b988a47fd319d785c856
+        ├── [cf]
+            └── e31c14800afd7102e79c4dc5f379ffd994a5c5
+        ├── [d9]
+            └── 3ef66f752f95857e75de980d6920b69be6c720
+        ├── [dc]
+            └── 4e69db80a4cf9c004b319d6342b0a0ec5c5b75
+        ├── [de]
+            └── e8e3660bbcf496fb2eb6b4c80ba925cb6b6710
+        ├── [e4]
+            └── fdb55520542b583a8151dd4dca45a5ae1da6e7
+        ├── [e6]
+            └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+        ├── [e7]
+            ├── cbdf023b0f6f0183d5024c2e9f45834cac65cf
+            └── e6cca0ba7b173aed241c165ab94f5bb7014fb8
+        ├── [f0]
+            └── e9cc64f699245c416fef250cbbf62e092e0a51
+        ├── [f1]
+            └── 35847b75726169fdabdb926e606039b10ce648
+        ├── [f5]
+            └── 199f6483054847c9633e19d9a8f7cf0f81ed80
+        ├── [ff]
+            └── 20f0b2c0e7585c49780c0db461bbe3bae8fc58
+        ├── [info]
+        └── [pack]
+    └── [refs]
+        ├── [heads]
+            └── master
+        ├── [remotes]
+            └── [origin]
+                ├── main
+                └── master
+        └── [tags]
+[.github]
+    └── [workflows]
+        └── ci.yml
+.gitignore
+[backend]
+    ├── .dockerignore
+    ├── [.github]
+        └── [workflows]
+            └── ci.yml
+    ├── [config]
+        └── database.go
+    ├── [controllers]
+        ├── book_controller.go
+        ├── connection_controller.go
+        ├── highlight_controller.go
+        ├── note_controller.go
+        └── user_controller.go
+    ├── go.dockerfile
+    ├── [migrations]
+        ├── 20240101000001_create_tables.down.sql
+        └── 20240101000001_create_tables.up.sql
+    ├── [models]
+        ├── annotation.go
+        ├── book.go
+        ├── connection.go
+        ├── models.go
+        ├── text.go
+        └── user.go
+    ├── [routers]
+        └── router.go
+    └── [utils]
+        └── helpers.go
+compose.yml
+[frontend]
+    ├── .dockerignore
+    ├── [.github]
+        └── [workflows]
+            └── ci.yml
+    ├── Dockerfile
+    ├── angular.json
+    ├── package.json
+    ├── [src]
+        └── [app]
+            ├── [components]
+                ├── annotation-view.component.ts
+                └── book-list.component.ts
+            └── [services]
+                └── data.service.ts
+    └── tsconfig.json
+go.mod
+go.sum
+main.go
+
+--- File Contents ---
+
+--- File: .git/COMMIT_EDITMSG ---
+setting basic fil, docker and .ignore and dockerfile
+
+
+--- File: .git/FETCH_HEAD ---
+4c2d39daf1c702158ce65e117a0e9aa9d25a5fae		branch 'master' of https://github.com/Jimmykoumako/myannotations
+
+
+--- File: .git/HEAD ---
+ref: refs/heads/master
+
+
+--- File: .git/ORIG_HEAD ---
+cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f
+
+
+--- File: .git/config ---
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/Jimmykoumako/myannotations.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+
+--- File: .git/description ---
+Unnamed repository; edit this file 'description' to name the repository.
+
+
+--- File: .git/hooks/applypatch-msg.sample ---
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+
+
+--- File: .git/hooks/commit-msg.sample ---
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+
+
+--- File: .git/hooks/fsmonitor-watchman.sample ---
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {
+			"since": $last_update_token,
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+
+
+--- File: .git/hooks/post-update.sample ---
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+
+
+--- File: .git/hooks/pre-applypatch.sample ---
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+
+
+--- File: .git/hooks/pre-commit.sample ---
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+
+
+--- File: .git/hooks/pre-merge-commit.sample ---
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+
+
+--- File: .git/hooks/pre-push.sample ---
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+
+
+--- File: .git/hooks/pre-rebase.sample ---
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+
+
+--- File: .git/hooks/pre-receive.sample ---
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+
+
+--- File: .git/hooks/prepare-commit-msg.sample ---
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+
+
+--- File: .git/hooks/push-to-checkout.sample ---
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+
+
+--- File: .git/hooks/update.sample ---
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+
+
+--- File: .git/index ---
+DIRC      !e��3ݕe��3ݕ   ��  ��  �  �  �:�飤�-��;��(��X�d .github/workflows/ci.yml  e���9�e���9�   ��  ��  �  �   :x����3�q.�j��6� d�Y� 
+.gitignore        e��-*+<>e��|	�   ��  ��  �  �   ,GN�\��S�x��)�Dt>l�1� backend/.dockerignore     e��^��te��^��t   ��  ��  �  �  e�V�Տ�c�,V��?|ք5  backend/.github/workflows/ci.yml  e��(8w�/e��n2qf   ��  ��  �  �   �����
+��<��겞+%m*�� backend/Dockerfile        e���Ze��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/config/database.go        e�����Pe��v
+P   ��  ��  �  �    �⛲��CK�)�wZ���S� &backend/controllers/book_controller.go    e�����Pe��v�e�   ��  ��  �  �    �⛲��CK�)�wZ���S� ,backend/controllers/connection_controller.go      e�����Pe��v�e�   ��  ��  �  �    �⛲��CK�)�wZ���S� +backend/controllers/highlight_controller.go       e�����Pe��v
+P   ��  ��  �  �    �⛲��CK�)�wZ���S� &backend/controllers/note_controller.go    e�����Pe��v�G   ��  ��  �  �    �⛲��CK�)�wZ���S� &backend/controllers/user_controller.go    e�����Pe��v{��   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/annotation.go      e�����Pe��vw�   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/book.go    e�����Pe��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/connection.go      e�����Pe��v�n�   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/models.go  e�����Pe��v>��   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/text.go    e�����Pe��vw�   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/models/user.go    e���Ze��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� backend/routers/router.go e�ר.��e�ר.��   ��  ��  �  �   =9]��VG^�z��C5o�]F�Z frontend/.dockerignore    e�׷
+���e�׷
+���   ��  ��  �  �  ��]�����:8������ !frontend/.github/workflows/ci.yml e�ו6t��e�ו6t��   ��  ��  �  �   ��5�{urai��ےn``9��H frontend/Dockerfile       e���A�e��v}R�   ��  ��  �  �   .-2o��=&�T�D�nz� frontend/angular.json     e���A�e��v}R�   ��  ��  �  �   %Y}�YY�n�$�J1$TM��1�� frontend/package.json     e���A�e��vo��   ��  ��  �  �    �⛲��CK�)�wZ���S� 8frontend/src/app/components/annotation-view.component.ts  e���A�e��v2��   ��  ��  �  �    �⛲��CK�)�wZ���S� 2frontend/src/app/components/book-list.component.ts        e���A�e��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� )frontend/src/app/services/data.service.ts e���A�e��v}R�   ��  ��  �  �   &->��Z�	6��˳���� frontend/tsconfig.json    e��-3y0e��v�   ��  ��  �  �   � R��%�w���
+�{{�~ go.mod    e��-�.xe��vV5   ��  ��  �  �    �⛲��CK�)�wZ���S� go.sum    e��-�Y�e��v�   ��  ��  �  �   �����} /���܈�) main.go   e���A�e��v&��   ��  ��  �  �    �⛲��CK�)�wZ���S� 0migrations/20240101000001_create_tables.down.sql  e���A�e��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� .migrations/20240101000001_create_tables.up.sql    e���A�e��v���   ��  ��  �  �    �⛲��CK�)�wZ���S� utils/helpers.go  TREE  a 33 5
+ )(����y�\����+['utils 1 0
+F�~ ��w��ܟ�N����a.github 1 1
+�0}�S)O��"�&���N�~workflows 1 0
+B�!��D	�*h�D
+@��owbackend 16 5
+(�6�,`���$=�"�Aconfig 1 0
+�>�ou/��~uޘ
+i ���� models 6 0
+7�{�b�ӿ���2�7��cy.github 1 1
+���
+�q�M��y�ٔ��workflows 1 0
+��̠�{:�$Z�O[�O�routers 1 0
+3n�#���1	g2b�_Jo3��controllers 5 0
+�Niۀ�Ϝ K1�cB���\[ufrontend 9 2
+���f����.����%�kgsrc 3 1
+:�?.��]E�eӹ����O�app 3 2
+}�3�ر�q)��C�t��@rservices 1 0
+��TAH���?04s��΅ucomponents 2 0
+�~�0LJb�����ׅ�V.github 1 1
+��C�jjm�P<�A�	���\workflows 1 0
+�}��O����B&��f{}���migrations 2 0
+�E�� �-�ҥ|�O,@
++��JM�j؅W�sG#y����Q
+
+--- File: .git/info/exclude ---
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+
+--- File: .git/logs/HEAD ---
+0000000000000000000000000000000000000000 e4fdb55520542b583a8151dd4dca45a5ae1da6e7 Gideon <jimmykoumako@yahoo.com> 1704709251 -0500	commit (initial): Initial commit
+e4fdb55520542b583a8151dd4dca45a5ae1da6e7 0000000000000000000000000000000000000000 Gideon <jimmykoumako@yahoo.com> 1704709251 -0500	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 e4fdb55520542b583a8151dd4dca45a5ae1da6e7 Gideon <jimmykoumako@yahoo.com> 1704709251 -0500	Branch: renamed refs/heads/master to refs/heads/main
+e4fdb55520542b583a8151dd4dca45a5ae1da6e7 51139600d75cfecf31c3ab7d87ff71b4b4805574 Gideon <jimmykoumako@yahoo.com> 1704709353 -0500	commit: del
+51139600d75cfecf31c3ab7d87ff71b4b4805574 632cd6af9cb5b5a2ce6117c13327f466f82ecb51 Gideon <jimmykoumako@yahoo.com> 1704710774 -0500	commit: Initial commit
+632cd6af9cb5b5a2ce6117c13327f466f82ecb51 0000000000000000000000000000000000000000 Gideon <jimmykoumako@yahoo.com> 1704710774 -0500	Branch: renamed refs/heads/main to refs/heads/master
+0000000000000000000000000000000000000000 632cd6af9cb5b5a2ce6117c13327f466f82ecb51 Gideon <jimmykoumako@yahoo.com> 1704710774 -0500	Branch: renamed refs/heads/main to refs/heads/master
+632cd6af9cb5b5a2ce6117c13327f466f82ecb51 4820b4df661f803d7781fbe7c8e5ec9524ae06ea Gideon <jimmykoumako@yahoo.com> 1704710945 -0500	commit: del sritpt
+4820b4df661f803d7781fbe7c8e5ec9524ae06ea 4c2d39daf1c702158ce65e117a0e9aa9d25a5fae Gideon <jimmykoumako@yahoo.com> 1704711115 -0500	commit: setting github action
+4c2d39daf1c702158ce65e117a0e9aa9d25a5fae cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f Gideon <jimmykoumako@yahoo.com> 1704711489 -0500	commit: structure
+cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f 6a557fd837fff7b6b6952137500aacdbf3bc937b Gideon <jimmykoumako@yahoo.com> 1704712209 -0500	commit: setting basic fil, docker and .ignore and dockerfile
+
+
+--- File: .git/logs/refs/heads/master ---
+0000000000000000000000000000000000000000 e4fdb55520542b583a8151dd4dca45a5ae1da6e7 Gideon <jimmykoumako@yahoo.com> 1704709251 -0500	commit (initial): Initial commit
+e4fdb55520542b583a8151dd4dca45a5ae1da6e7 e4fdb55520542b583a8151dd4dca45a5ae1da6e7 Gideon <jimmykoumako@yahoo.com> 1704709251 -0500	Branch: renamed refs/heads/master to refs/heads/main
+e4fdb55520542b583a8151dd4dca45a5ae1da6e7 51139600d75cfecf31c3ab7d87ff71b4b4805574 Gideon <jimmykoumako@yahoo.com> 1704709353 -0500	commit: del
+51139600d75cfecf31c3ab7d87ff71b4b4805574 632cd6af9cb5b5a2ce6117c13327f466f82ecb51 Gideon <jimmykoumako@yahoo.com> 1704710774 -0500	commit: Initial commit
+632cd6af9cb5b5a2ce6117c13327f466f82ecb51 632cd6af9cb5b5a2ce6117c13327f466f82ecb51 Gideon <jimmykoumako@yahoo.com> 1704710774 -0500	Branch: renamed refs/heads/main to refs/heads/master
+632cd6af9cb5b5a2ce6117c13327f466f82ecb51 4820b4df661f803d7781fbe7c8e5ec9524ae06ea Gideon <jimmykoumako@yahoo.com> 1704710945 -0500	commit: del sritpt
+4820b4df661f803d7781fbe7c8e5ec9524ae06ea 4c2d39daf1c702158ce65e117a0e9aa9d25a5fae Gideon <jimmykoumako@yahoo.com> 1704711115 -0500	commit: setting github action
+4c2d39daf1c702158ce65e117a0e9aa9d25a5fae cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f Gideon <jimmykoumako@yahoo.com> 1704711489 -0500	commit: structure
+cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f 6a557fd837fff7b6b6952137500aacdbf3bc937b Gideon <jimmykoumako@yahoo.com> 1704712209 -0500	commit: setting basic fil, docker and .ignore and dockerfile
+
+
+--- File: .git/logs/refs/remotes/origin/main ---
+0000000000000000000000000000000000000000 e4fdb55520542b583a8151dd4dca45a5ae1da6e7 Gideon <jimmykoumako@yahoo.com> 1704709253 -0500	update by push
+e4fdb55520542b583a8151dd4dca45a5ae1da6e7 51139600d75cfecf31c3ab7d87ff71b4b4805574 Gideon <jimmykoumako@yahoo.com> 1704709358 -0500	update by push
+
+
+--- File: .git/logs/refs/remotes/origin/master ---
+0000000000000000000000000000000000000000 632cd6af9cb5b5a2ce6117c13327f466f82ecb51 Gideon <jimmykoumako@yahoo.com> 1704710776 -0500	update by push
+632cd6af9cb5b5a2ce6117c13327f466f82ecb51 4820b4df661f803d7781fbe7c8e5ec9524ae06ea Gideon <jimmykoumako@yahoo.com> 1704710952 -0500	update by push
+4820b4df661f803d7781fbe7c8e5ec9524ae06ea 4c2d39daf1c702158ce65e117a0e9aa9d25a5fae Gideon <jimmykoumako@yahoo.com> 1704711117 -0500	update by push
+4c2d39daf1c702158ce65e117a0e9aa9d25a5fae cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f Gideon <jimmykoumako@yahoo.com> 1704711498 -0500	update by push
+cc0ec06a8e45a781d6edf9067c8d8c3be18ce47f 6a557fd837fff7b6b6952137500aacdbf3bc937b Gideon <jimmykoumako@yahoo.com> 1704712212 -0500	update by push
+
+
+--- File: .git/objects/04/8c7f1df020fb98e0a18ceb17adf196f512e1de ---
+x+)JMU06c01 ����촜��b�ʊϔ;�[�/��6����� QD�
+
+--- File: .git/objects/07/e6e472cc75fafa944e2a6d4b0f101bc476c060 ---
+xK��OR04a���OI���O)�I-� Q�\
+
+--- File: .git/objects/0c/20292806a9a5f6f279e60c5c84b3a0842b5b27 ---
+x+)JMU064f01 ��̒��$�.��y������>���4��<�:C3�������T���g/7^]��/k�~�E)#�@�IJL�N�Ka�8*jvI'�Ϫ	*��d�X�8BT��畀��{�8�{ϗi���m9��R�tv� Ԫ�|����AS��c/��(����Cu��c�*�Ks��}4{��k��ݚ�ʣnz�<jFnbf�^z>�.~�ٿ�?��(�<|�N�ZM�Kr3ӋK2���׹n�abx����Қ��:��!�JK2s�����)��XZ�a�������; �F��
+
+--- File: .git/objects/0f/ae45b08c0200e02de1d2a57c974f2c400d2ba1 ---
+x+)JMU04�`040031Q020210B0�O.JM,I�/IL�I-�K�/��+.�ax6���M�9{wk�+��q�IO�Db(-�� ]k3�
+
+--- File: .git/objects/23/2704a1358267554f0566fcd299fe2b890e8614 ---
+x+)JMU06c01 ����촜��b˗nER"�$޹l}�ZP.��w) B3:
+
+--- File: .git/objects/28/c51536d22c60fcaa90243d08c61d220511dc41 ---
+x+)JMU025d040031Q�K�O�N-�L��/Jep�[�kK�Պ]��]J�r��61 ��̒��$��eD��2=��{�s���S���6)-3'�a��'�y�9��զyڪ�Z=W �$��e�3ܴ��_�?������L�m��W�+()���I-*f��y�a��9ކs��6,x]
+Q�����S�`~��Zұ���-a�e������J�������y��'M�fșn��*�+ߘq� \k�
+
+--- File: .git/objects/2d/326f1cefed113d26aa0354be440e81176e7aaf ---
+xK��OR01c��R��/-Rp�K/�I,RH��K�L/-J,����JR�J2R�R��� �o6
+
+--- File: .git/objects/2d/3eaae6ae5aec8b0936d506b9cbb3f002b7a29e ---
+xK��OR0�`��R��/-R()N��K�L��*��S �KR�J2R�R��� a
+
+--- File: .git/objects/33/6efe239294f63109673262ea5f4a6f33019ab4 ---
+x+)JMU06g040031Q(�/-I-�K�gx6���M�9{wk�+��q�IO�D pE7
+
+--- File: .git/objects/37/c87bd662c6d3bfa6a4049a32a237ea15a46379 ---
+x+)JMU022a040031QH���/I,����K�gx6���M�9{wk�+��q�IO�D�¤��lJ����R��0+7?%5���i%�%����R �h�
+
+--- File: .git/objects/39/5da4b51a56475ec77abcb143356fdd5d469c5a ---
+xK��OR03d���OI���O)�I-�RVHJL�N�K��K�2�2���R����3K�P��d�  /�
+
+--- File: .git/objects/39/e97846721a14ba18ee44b5eb0570771ca08da5 ---
+x+)JMU06a040031QH�ԫ��a���Lʷ�*1���Uyv����
+ 0�,
+
+--- File: .git/objects/3a/903f2eede8ba5d45b365d3b9f6fe80bf4f9e1f ---
+x+)JMU06`01 �Ă��W��nl�V�)���.��[��  ��
+
+--- File: .git/objects/3a/f4e9a3a4ee2dfde63bb5e492289cab5813cb64 ---
+xœ�n�0�s�S|��2�E��\EQ�O@I�D��
+�qa�ߥ$V�&Ǟ�w�Վ���O����P�R����tM��TVjWG��wuҦ�}rA��N.&adT!#&D5��yZ����
+:����@
+<���\����o{~�XW�O���UYP1
+��,ˋ �t���UG�|����OK�s^�ѨesR���b�J�[C�h�͵��^<�Ȋ���wjUyo�c{��5��Ɯǥ5�4�]����};ܺ�=��[9�m�����+�jۿP�5\7����ਢ�y�
+����_R}��=��uDC�Ew���K���Kš6X��Τ�'�^dOT6dW��s���z#_�dۢ�c-��X�&3�kѪ��e)���u�'��/� ���
+
+--- File: .git/objects/42/f521f913e34409f72a68a2440a1040dcd36f77 ---
+x+)JMU06a040031QH�ԫ��a���r�w��Yo}2Ic����) >��
+
+--- File: .git/objects/45/499345c432b73184a5f79fe952043fa8b5de9d ---
+x+)JMU04�`01 ������t��v��K���֕ޛ����m���
+p%E�99�E�w�2o7,9?���pn�ӆob�K!�r�SRs��OT_K:vy��%,����]�\	QP�_Z2�8��)�9Ӎ�^�{�3�� ��;
+
+--- File: .git/objects/46/9e1f7e201f98a577b0b3dc9fab4edff3fbfb61 ---
+x+)JMU0�`040031Q�H�)H-*�K�gx6���M�9{wk�+��q�IO�D }��
+
+--- File: .git/objects/47/4ea65cfab453d578988a29db44743e6caf31ab ---
+xK��OR01a���OI���O)�I-�RVHJL�N�K��K�2�2���R����3K� �S
+
+--- File: .git/objects/48/20b4df661f803d7781fbe7c8e5ec9524ae06ea ---
+x���
+�0D9��m �O���F{���82�!���μ��PK���ވ@�a2�b�J��Ry?i�Q�(�:�9��d;6�:%C4�|��<�@F�@l��INҨã/��+G��߹�s�G��>O\j��Z ,���c�\s�F:v�Ce�>�m��� ɂF�
+
+--- File: .git/objects/4c/2d39daf1c702158ce65e117a0e9aa9d25a5fae ---
+x��K
+�0@]�s%M�+����db��#u����|�^�ޛ��IV"�#��օR&�)���6~JΆ��"V*N}p�E�F��-���F=��P��Q���H�*�d��/p}���7o�|�qf�d�7��a8pp�Nku�cP�T}I�-Ox6�����~|Le
+
+--- File: .git/objects/51/139600d75cfecf31c3ab7d87ff71b4b4805574 ---
+x��A� @Qל�h`
+$Ƹ�CgHk���.z{{�?y�[�s���o":'�%�Kf�h�K�1�"&���&k��gD���E@`�<�GB`$(���6��Yڪ���ci{��=�Z���>4�I��4F����U,���D
+
+--- File: .git/objects/53/628a74c665890ee23b0ce9e5949e30e52a5735 ---
+x+)JMU0�4b040031Q�K�O�N-�L��/Je`���L�_S��r�����H01 ��̒��$��z�
+�g<X��Z|��i_�ރT5g��[O�V����22��p�S�4T�ؾ�̜T���3Y��36_e�ћ���&�<Ķ�D���R\='�1�nز����A,�+�ޛQ�V��WR2=zʂ��i��x��(���g'�V�����0�`�:G�{�/F���\����!T��2<��h���ל��5וG�8��'x"TEnbf�^z>�.~�ٿ�?��(�<|�N�ZM�Kr3ӋK2���׹n�abx����Қ��:��!�JK2s�����)��XZ�a�������; �٤�
+
+--- File: .git/objects/59/7df95959ce6ece24d24a3124544ddbc031d1c2 ---
+xK��OR06g��R��/-R(HL�NLO��*��SH��+I�+Q�H-JU��� K��
+
+--- File: .git/objects/5b/c46a8dd932a39239945a2d5dd1a780fce88332 ---
+x+)JMU01`01 ���ļ���Ē���b�म�c��|��y^>�2��V�) ��F
+
+--- File: .git/objects/5d/9045752d6194b0fa06f137f76004557738a940 ---
+x�Wmo�0�s��H��h��4� ��x�T����:v旕���ih�v�45�{�{|�
+5���gw��%S.ɔ�|4�/ٌK�rJ�~�Ă�}:�����ɇ����GEE�T�Z�����f�2�,a�P]A�5:+͙s����`�d�dJ%�VB0�մP)[�pƳma�r���3�i��N-KL�(�d���p1L_qdd(��g�&q��Y>\o�q��)Y(=�	�0�;1�3��%�PP.�L��e*F����+z�z��8da���P�>שR�[���d�t�y������Z�|o� �>٤���Qc����3���e�쎦�
+���R�͡�a�RKQ��6�I�9d�ѠmO��Xpc���[��o��i)_q���R4B�q�m(�VA���'������O�����?vel.Eo5�B�j!A�N���%u��8U���gRi֛��`��w��5�zHW���Ms������UP�"Kr������� �$�.����BДA�4�Gd�k)�]���UN�����qR'm6#vi��m���]�]���k7���q���n��km��	b�[��\�~TfNP�4J���%)qԠ��ҚZyj�.y'u<_'�����W�ʢ�oz=� ����I�Bn ����Fb�Q�38�4+��8�U#�F�h�B�P?\5�޿Z���Ń�,h� ���_o~���ʴyG?`N���1��?��ڀ-]�G0z8J�0v��EQ͕+�\gy9����_/��g��}}^]�1g�Gɓ����'OO#ȭ-�1��7�E����P�S�������ΰ����d~f(>9êP���]H�t&��T�Xl,<�8Eg\�Aڱ�6�������'��{�J^�h�H�އ��)]��<��y����7�>�*e��I�qaofN��n4�̶4(
+
+--- File: .git/objects/63/2cd6af9cb5b5a2ce6117c13327f466f82ecb51 ---
+x��A�  =�
+>�YZ�-�1ތ�X`I�RLC�^�u��Ll����}ю�8�`:0a����Q��8;LƋz�&k�h��@"�YbM9P�(g2�;"Y�{�ۦo%I[��Qj}/m������N�Ջ6�Y}P_����k酟��Pd�Gm
+
+--- File: .git/objects/63/adca457dd9efb87aedb50269b5478bafaafed5 ---
+x+)JMU01`01 ���ļ���Ē���b����X�'��ߒ�xF(7�~��5 ��
+
+--- File: .git/objects/69/cbbe048f913d9fb46153a398550b052f72e9ac ---
+x+)JMU0�4b040031Q�K�O�N-�L��/Je`���L�_S��r�����H01 ��̒��$eu���M���i.������&3
+�jδٷ�z�L)4��Qedv��2��i�*�}i�9��O�g���gl���7ߵ�gM�y�mI�@G�0�zNv=b�ݰe���/�X�Wl�7�"�(?��dz��?
+��Vy���Q&��NB�J����Oa8�4u��?��_���߹>TW�C�(.�ex6���M�9{wk�+��q�IO�D�����<��|�]�,�����Q�?x�ܝ�����f�%�d��3�s�����@�ᥥ5��ux�B��d�3�͓�S����|��;�W�����w" y=��
+
+--- File: .git/objects/6a/557fd837fff7b6b6952137500aacdbf3bc937b ---
+x��KN1DY�}��x��ʎs���v��������JO�JE�Z���2f@Ҩ��RLvs�����`�0�m�^}��� "d�r`c�Kq\���S(���K 6~S�1nr�G-,�>kk�]-�ry��ș������Ek���QM:�GU�y�گ�ӽl��Eh�[�8�k������;U�
+
+--- File: .git/objects/6a/be6740425365601b8a29049ced6997af65d19e ---
+x+)JMU0�d01 ���ļ���Ē���b��
+6x�Y�û%q��]/�D���*����$���g0�X�Wڭ��b������]��3v Ҥ$
+
+--- File: .git/objects/6d/ed4fef61393915d71fb6c999761a0b5845b3f9 ---
+x+)JMU0�4b040031Q�K�O�N-�L��/Je`���L�_S��r�����H01 ��̒��$�.��y������>���4��<�:�Q@%Ps�;��keJ���*#���9�NCU���K��Iex~�>�5>c�U&����>kR�ClKJ:*/���s����-K���b�b뽹iE�y% %ӣ�,�q�P`��ʋ'ߏ2	�xvjUz�^n~
+�	���sT����bn��������@ť���>����5g�n�u�Q7=�	�5#713O/=�a?{�����ke�>w�c�&�%���E�%��y���\7�01<�}xii�t^�E�%�9�n����g,-߰����~�?��� .]�
+
+--- File: .git/objects/78/bfb19ba733ab712ebe6aa3bf36a20064d159e4 ---
+xK��OR0�`�RV�K�,�L��/J���OJL�N�K��M����O+��+qS2�K����SR�s�SJsR�� �
+
+--- File: .git/objects/79/78e8e62388617f856fd3179b351d12f626fb76 ---
+x+)JMU06a040031QH�ԫ��aث��pgR����r�J�Y)o 1�
+
+--- File: .git/objects/7d/ea33aed8b1b6712914b6e1ba438b74dacf4072 ---
+x+)JMU07b01 ���܂��Լ�b�3u3
+|���I��XRY�z�0���Ԣ����b�3C=����e�'g`R�i��R ��
+
+--- File: .git/objects/8a/307d9e53294fba8f22f026e9f29eda4e9e1b7e ---
+x+)JMU06c01 ����촜��b���?��p~��X��%�p�r~9 F�.
+
+--- File: .git/objects/91/561ad4d58fae1763c12c56f1de3f7cd6840235 ---
+xm�1n� ESs�/m���(Z�U�Q� Xb�f��}0��H�0�ͼ�i<�\�N�ʌ��ڦwy`�.���<�I�f���S� �a=�7�M�
+����B���o��t�>#�$K��g���6eQ1)۰3$�n�5#qF������T�A��ȗ����ec�/���o,��A���V`)��Г�ۘJ���|��~[�
+��ݎ(�]I�ZCR]!~Bwj�
+
+--- File: .git/objects/96/9bdae54aa9647137fb887a3236d140d30922cb ---
+xK��OR06e��R��/-R�K�,�L��/JUH��+I�+Q�Hr��� ,M
+�
+
+--- File: .git/objects/97/5b94a0f8c2c2515e2b24e8e4f7c50210d8e6c9 ---
+x+)JMU045d040031QH�K/�I,��*��c�5ʗy�V�Vms�>�F��Pu��ى�u��?##��S��e��{����C&@�P\��`5�^��]���S/����a��<y�)%���yi��P��V=[�����*��ӛ?0m_4 c?
+
+--- File: .git/objects/98/9954414813bff89a3f0e1e303473b2a5ce8575 ---
+x+)JMU01f040031QHI,I�+N-*�LN�+)fx6���M�9{wk�+��q�IO�D Ͳ]
+
+--- File: .git/objects/9a/fbe41de10dfac53cc6f5eab29e2b256d2a8cd4 ---
+xK��OR045ePVHJL�N�K�w��Ei�9�\\nA��
+��9�y�V9�%��%\\��A�.�A
+��\\���@z��)
+zp^qi.����S ɥ����'�@u�!I'�f�(��%f�ĝ}]����A|�X. �/�
+
+--- File: .git/objects/a8/a54e758b26628431b9c0e9c801438a11d368b9 ---
+x�W[o�6޳�HW�b��)�d���zA�bؓ@K�Ě��z^���C���Z��$,������_�\-���Wg�<}��L�%1�l���+&)�*�Q��w�[$���/ן�/�n�O��%bK�T�X��I�����
+�o�Y���k�߼�y�����ŧ����z�Fꯄ@W�K��95��-*�J3jfb
+�мF'}<�>��Ε�ZqN�AS�
+�ZA�+����{R�4�����1�k�)j%�����\�?Td
+�`�n�1e�,��oZ2[�%�(�^q�1��{�X1�ry�Sa2-��Z�R(�Ԓqbti���A���S	�\�J��
+�>ҵbe���>��
+s��������C5�ƾ�G��Jij��HӎN�t�Jsȡ�a\K���!�8̸�����n���М3c���F}ln�ӕd����#������oSP:��/�_�8�_�s��#gP>��թ���������� ��pEy
+�:U��P����Ri:��u0��5��	��=>�9K��{Z�K3��<
+��]�Z�y�P��8�c�~����<^�
+�UTS��{�$;t�6��4���� 2f
+h��qX�aޮ���v�m�vύ`�gP{�qpa��v�b�?"KǉN�%G�K� 5HI����a��tX��&��'��\݇w�C1�;����}���4��B��伓0t����W�H�Z�n;�iDV�)
+��'�O+s�������R$����g��INQ�l�7�bDdߑ��,h�m@�4��y
+ۺ�`��,w���C�{&�v�� kuqr{��IOn�z��t���]�*kks�A�H1��q?�@���&�Er:����ݩ/�WP׶�PG}��3����<-5	u�����K&w@��0F� 	=�g���7��1 y�ː�#Ǖ���"@�Ռ��K��·�9�6-:�ȸС��|�$��~L�
+
+--- File: .git/objects/af/f0dcf6d187df23396c80c06c57d045b706b3a1 ---
+x+)JMU06c01 ����촜��b�������`����D���u��, G�|
+
+--- File: .git/objects/b3/bd43c96a6a6d9816503c8741b309e41cbce05c ---
+x+)JMU06c01 ����촜��b�}�=���_<���6{^Zu���}_��
+
+--- File: .git/objects/b9/05f9aa398fbdd582521defb881d861859d1072 ---
+x+)JMU01`01 ���ļ���Ē���b��
+6x�Y�û%q��]/�D  �8|
+
+--- File: .git/objects/ba/0f0407881dfdaff37d1c202fc1c3cedc88ad29 ---
+xK��OR02a��R��/-Rp�WH�OIU�H-JU��� ��	&
+
+--- File: .git/objects/bc/a8fb62dd0a943eb8ad9f8d48d2060e66743b2b ---
+x+)JMU�0g040075UH.JM,I�/.)*M.)-J�+�`���Z��8e�/����XB�-V:� �Bneb^^~IbIf~^1���<�����ݒ���" k�&�
+
+--- File: .git/objects/bd/2027e1b9625c1ae791d3ad0bbf1a6799791f3e ---
+x�S�n�0�Y_1�!7�p�C��AQ�_@J�Ę��p�_R��H�cO�Ў�ʲ��O$G��p�*��������ڗ	���zc5�S�خ�H^$>����2h�Y�=-�۠�� �'�&�{��@���
+��o���۟o��E����C��!N��Lˋ ?LX��S�⬝O
+v���Z�1����d{��-i�&11o
+�s��T��:���5�������%J�����h��U8��h�䃴�G+/��tha�豗�m�Y딈/*���$us�K�k�o��h�d�=�Ʉ種e~.C��&�ez5=��S���es�N���,��'�U���77��b��R�5Mv�߄�1}��9�($u��d�}Mϗ�Lo�\�_�Yn
+
+--- File: .git/objects/bd/5ddefbe8dcf13a197f38b31cc606e5cfe10ead ---
+xu��j�0�{�Sr�M[C���9J/}�Vl%����&o_��hOB��ovG�X��xz��Y
+��<ku��'�nc'��:���1�*q��T2`���O@:Au��z8z�����˛��4k�E�<�#�H!r#��-԰186�N�7������"�O~uЖҌ��8�����/ۨ�����*āSRǷM1��m���G�|�*�R<ZT�0'j���j��eK��Co��(VY^����S�����p �X�e?���F
+
+--- File: .git/objects/be/7d8ccf4fc7d1c08b42269b9e667b7d14fdbefd ---
+x+)JMU06a040031QH�ԫ��a�{���;�$�-6�c{z�!�Z :�p
+
+--- File: .git/objects/c5/3fa7a3ae087d28002bf96da41d46ffd72ef704 ---
+x+)JMU06a040031QH�ԫ��a�*9?�����d�������7�m  ��
+
+--- File: .git/objects/c8/0052959c25fe0777fa011387f70af07b7bc47e ---
+xK��OR02d��O)�IUȭL���/I,���+� �
+g
+
+--- File: .git/objects/cc/0ec06a8e45a781d6edf9067c8d8c3be18ce47f ---
+x��M
+� @�=�hq��@)��I���"�o���^���]j�.�1K�8��كA��R�<������M��&��P�Ku2�(CJ��"{� �#&��ebA�/��ך����^K9�:
+m�y�R�-���
+ vByUN)q�s��T|{����ĶG
+
+--- File: .git/objects/cc/7e9911304c4a62be18b988a47fd319d785c856 ---
+x+)JMU040c040031QH���/I,����-�L-�K��-��K�+�+)fx6���M�9{wk�+��q�IO�D�����lݜ���: <0�
+
+--- File: .git/objects/cf/e31c14800afd7102e79c4dc5f379ffd994a5c5 ---
+x+)JMU06c01 ����촜��b����,�U-n�VEF,j��vF� X��
+
+--- File: .git/objects/d9/3ef66f752f95857e75de980d6920b69be6c720 ---
+x+)JMU0�d040031QHI,ILJ,N�K�gx6���M�9{wk�+��q�IO�D ���
+
+--- File: .git/objects/dc/4e69db80a4cf9c004b319d6342b0a0ec5c5b75 ---
+x+)JMU021d040031QH��ώO��+)���I-�K�gx6���M�9{wk�+��q�IO�D�j�¼����<��dd�g� q	�Z��KR�W]Z�ZD�j �
+nf
+
+--- File: .git/objects/de/e8e3660bbcf496fb2eb6b4c80ba925cb6b6710 ---
+x+)JMU023a040031Q�K�O�N-�L��/Je��]�U*�=�x՞�Φ�wc��D� ��^zfIFi���'��rg�ش;n�|"��A�(�Ii�9�M[�K�3���=)/!�r#�3��ļ�Ҝ�"����<]�|��om�V1��s�kϫZUW������
+QY�32�\�9�K^�*!��^<qWqQ2��{��/vźnN���ۿ����䡦�'��e�C��[�l]ԛnN��l;Oo���}�< z�k^
+
+--- File: .git/objects/e4/fdb55520542b583a8151dd4dca45a5ae1da6e7 ---
+x��A
+�  {�~�ec����g����,s��+���L�Rr՝���3�0��"����8��8`����
+��Ȯ��X6=�s)�*G�U'."�$���`=�f�� �hV�CU�-׌�k�/��;
+
+--- File: .git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391 ---
+xK��OR0`  	��
+
+--- File: .git/objects/e7/cbdf023b0f6f0183d5024c2e9f45834cac65cf ---
+xK��OR06e��R��/-Rp�O�N-J��IUH��+I�+Q�H-JU��� -
+�
+
+--- File: .git/objects/e7/e6cca0ba7b173aed241c165ab94f5bb7014fb8 ---
+x+)JMU06a040031QH�ԫ��a�&u�j�:��:a���\ka2 #!�
+
+--- File: .git/objects/f0/e9cc64f699245c416fef250cbbf62e092e0a51 ---
+xœ�n�0�{�S|ȍ2�����Ƈ�AQ�P#�&w��0Ї/)ɀ�ɱ'ařo��em���f�Uv��`�
+`���O�v��^����T��wuԦ�]$/����02(��f��ܭW͑c�S{؝G)}����ש��۞�&��K�O��ͫ�q��A��:�C�cqRΧn���%�1��ШesT�Έ4b�����1��*�^SH����nUy�CI�=}}7�|v�f͞|���u�H����u:4X�Y":l�$[7F/9S��%��nn@ݔ��3�*�>�Q���s��1�"�s�0��Bti�����J���`u�֞�NZy��Y��e�v��?o4V/W��I�-�7k����n_a
+CR�V
+��K{��`�;M���a
+
+--- File: .git/objects/f1/35847b75726169fdabdb926e606039b10ce648 ---
+x-ʱ
+�0�a�{�#nbSqp�"5qH�k�����_+�/��W�U�\�'Sl��D�䅫
+mo	`�U���X�(&��҇b�17�l���ԃ�h&��1�@�����=�d���We�7������4"�.�Q�K��U�,
+
+--- File: .git/objects/f5/199f6483054847c9633e19d9a8f7cf0f81ed80 ---
+xK��OR0�`��R��/-Rp�,�(MRpL.���+V(�/�N��/WH��+I�+Q�H-JU��� 	��
+
+--- File: .git/objects/ff/20f0b2c0e7585c49780c0db461bbe3bae8fc58 ---
+x+)JMU0�4b040031Q�K�O�N-�L��/Je`���L�_S��r�����H01 ��̒��$���|��~_�2��@N���l�*��3m���^+S
+�wT�]t�̩t��l_ZfN*����������2���wm�Y�zb[R"�Qy)���]�m7lY�}�� �[�ͅ�H+��+)�=e��C��U^<�~�I�Ƴ�P����r�SN0M�������p�w���G�*�Ks��}4{��k��ݚ�ʣnz�<�"713O/=�a?{�����ke�>w�c�&�%���E�%��y���\7�01<�}xii�t^�E�%�9�n����g,-߰����~�?��� TY��
+
+--- File: .git/refs/heads/master ---
+6a557fd837fff7b6b6952137500aacdbf3bc937b
+
+
+--- File: .git/refs/remotes/origin/main ---
+51139600d75cfecf31c3ab7d87ff71b4b4805574
+
+
+--- File: .git/refs/remotes/origin/master ---
+6a557fd837fff7b6b6952137500aacdbf3bc937b
+
+
+--- File: .github/workflows/ci.yml ---
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.18
+
+    - name: Build Go backend
+      run: go build -o main ./backend
+
+  frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+
+    - name: Build Angular frontend
+      run: npm install && ng build
+
+    - name: Push changes to GitHub
+      run: |
+        git config --global user.email "jimmykoumako@yahoo.com"
+        git config --global user.name "Jimmykoumako"
+        git add .
+        git commit -m "CI: Build and deploy"
+        git push origin master
+
+
+--- File: .gitignore ---
+
+# .gitignore
+
+/backend/main
+/frontend/dist
+/node_modules
+
+
+--- File: backend/.dockerignore ---
+/node_modules
+# backend/.dockerignore
+
+.git
+
+
+--- File: backend/.github/workflows/ci.yml ---
+# backend/.github/workflows/ci.yml
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: Build Go backend
+      run: go build -o main .
+
+
+
+--- File: backend/config/database.go ---
+
+
+--- File: backend/controllers/book_controller.go ---
+
+
+--- File: backend/controllers/connection_controller.go ---
+
+
+--- File: backend/controllers/highlight_controller.go ---
+
+
+--- File: backend/controllers/note_controller.go ---
+
+
+--- File: backend/controllers/user_controller.go ---
+
+
+--- File: backend/go.dockerfile ---
+# backend/Dockerfile
+
+FROM golang:latest
+
+WORKDIR /app
+
+COPY go.mod .
+COPY go.sum .
+
+RUN go mod download
+
+COPY . .
+
+RUN go build -o main .
+
+CMD ["./main"]
+
+
+--- File: backend/migrations/20240101000001_create_tables.down.sql ---
+
+
+--- File: backend/migrations/20240101000001_create_tables.up.sql ---
+
+
+--- File: backend/models/annotation.go ---
+
+
+--- File: backend/models/book.go ---
+
+
+--- File: backend/models/connection.go ---
+
+
+--- File: backend/models/models.go ---
+
+
+--- File: backend/models/text.go ---
+
+
+--- File: backend/models/user.go ---
+
+
+--- File: backend/routers/router.go ---
+
+
+--- File: backend/utils/helpers.go ---
+
+
+--- File: compose.yml ---
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - '4200:4200'
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - '8080:8080'
+    environment:
+      - POSTGRES_URL=postgres://postgres:postgres@database:5432/madb
+    depends_on:
+      - database
+
+  database:
+    image: postgres
+    environment:
+      POSTGRES_DB: madb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+--- File: docs/.project_structure_ignore ---
+
+
+--- File: frontend/.dockerignore ---
+/node_modules
+# backend/.dockerignore
+
+.git
+node_modules
+dist
+
+--- File: frontend/.github/workflows/ci.yml ---
+# frontend/.github/workflows/ci.yml
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+
+    - name: Build Angular frontend
+      run: npm install && ng build
+
+
+--- File: frontend/Dockerfile ---
+# frontend/Dockerfile
+
+FROM node:latest
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD ["ng", "serve", "--host", "0.0.0.0"]
+
+
+--- File: frontend/angular.json ---
+/* Your Angular configuration content here */
+
+
+--- File: frontend/package.json ---
+/* Your package.json content here */
+
+
+--- File: frontend/src/app/components/annotation-view.component.ts ---
+
+
+--- File: frontend/src/app/components/book-list.component.ts ---
+
+
+--- File: frontend/src/app/services/data.service.ts ---
+
+
+--- File: frontend/tsconfig.json ---
+/* Your tsconfig.json content here */
+
+
+--- File: go.mod ---
+module myannotations
+
+
+--- File: go.sum ---
+
+
+--- File: main.go ---
+/* Your Go code here */
+
