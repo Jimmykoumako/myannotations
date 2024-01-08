@@ -1,0 +1,6 @@
+/node_modules
+# backend/.dockerignore
+
+.git
+node_modules
+dist

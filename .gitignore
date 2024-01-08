@@ -1,1 +1,6 @@
-/* Your .gitignore content here */
+
+# .gitignore
+
+/backend/main
+/frontend/dist
+/node_modules

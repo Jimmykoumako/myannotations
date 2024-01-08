@@ -1,0 +1,27 @@
+# frontend/.github/workflows/ci.yml
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+
+    - name: Build Angular frontend
+      run: npm install && ng build
