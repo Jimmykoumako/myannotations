@@ -2,10 +2,11 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jinzhu/gorm"
 	"mas/models"
 	"mas/config"
+	"net/http"
 	"strconv"
+	"fmt"
 )
 
 // BookController handles book-related operations

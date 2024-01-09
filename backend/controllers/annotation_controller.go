@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jinzhu/gorm"
 	"mas/models"
 	"mas/config"
 	"strconv"
@@ -77,69 +76,8 @@ func (ac *AnnotationController) ConnectAnnotations(c *gin.Context) {
 		return
 	}
 
-	connection.AnnotationID1 = getAnnotationIDFromParam(c, annotationID1)
-	connection.AnnotationID2 = getAnnotationIDFromParam(c, annotationID2)
-
-	config.DB.Create(&connection)
-
-	c.JSON(201, gin.H{"data": connection})
-}
-
-// ViewAnnotation retrieves and displays annotation details
-func (ac *AnnotationController) ViewAnnotation(c *gin.Context) {
-	annotationID := c.Param("annotationID")
-
-	var annotation models.Annotation
-	if err := config.DB.First(&annotation, annotationID).Error; err != nil {
-		c.JSON(404, gin.H{"error": "Annotation not found"})
-		return
-	}
-
-	c.JSON(200, gin.H{"data": annotation})
-}
-
-// UpdateAnnotation updates annotation details
-func (ac *AnnotationController) UpdateAnnotation(c *gin.Context) {
-	annotationID := c.Param("annotationID")
-
-	var annotation models.Annotation
-	if err := config.DB.First(&annotation, annotationID).Error; err != nil {
-		c.JSON(404, gin.H{"error": "Annotation not found"})
-		return
-	}
-
-	if err := c.BindJSON(&annotation); err != nil {
-		c.JSON(400, gin.H{"error": "Invalid input"})
-		return
-	}
-
-	config.DB.Save(&annotation)
-
-	c.JSON(200, gin.H{"data": annotation})
-}
-
-// DeleteAnnotation deletes an annotation from the system
-func (ac *AnnotationController) DeleteAnnotation(c *gin.Context) {
-	annotationID := c.Param("annotationID")
-
-	config.DB.Delete(&models.Annotation{}, annotationID)
-
-	c.JSON(204, nil)
-}
-
-// ConnectAnnotations establishes a connection between two annotations
-func (ac *AnnotationController) ConnectAnnotations(c *gin.Context) {
-	annotationID1 := c.Param("annotationID1")
-	annotationID2 := c.Param("annotationID2")
-
-	var connection models.Connection
-	if err := c.BindJSON(&connection); err != nil {
-		c.JSON(400, gin.H{"error": "Invalid input"})
-		return
-	}
-
-	connection.AnnotationID1 = getAnnotationIDFromParam(c, annotationID1)
-	connection.AnnotationID2 = getAnnotationIDFromParam(c, annotationID2)
+	connection.SourceAnnotationID = getAnnotationIDFromParam(c, annotationID1)
+	connection.TargetAnnotationID = getAnnotationIDFromParam(c, annotationID2)
 
 	config.DB.Create(&connection)
 

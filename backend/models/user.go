@@ -13,19 +13,3 @@ type User struct {
    Annotations []Annotation // User has many annotations
 }
 
-
-
-// SetPassword sets the hashed password for the user
-func (u *User) SetPassword(password string) error {
-   hashedPassword, err := HashPassword(password)
-   if err != nil {
-      return err
-   }
-   u.Password = hashedPassword
-   return nil
-}
-
-// CheckPassword checks if the provided password matches the hashed password
-func (u *User) CheckPassword(password string) bool {
-   return CheckPasswordHash(password, u.Password)
-}

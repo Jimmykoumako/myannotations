@@ -23,12 +23,6 @@ func (uc *UserController) RegisterUser(c *gin.Context) {
 	c.JSON(201, gin.H{"data": newUser})
 }
 
-// LoginUser handles user login (dummy implementation)
-func (uc *UserController) LoginUser(c *gin.Context) {
-	// Dummy implementation for login
-	// In a real-world scenario, you'd need to handle authentication and issue JWTs or tokens
-	c.JSON(200, gin.H{"message": "User login successful"})
-}
 
 // AddBookToUser adds a new book to the user's collection
 func (uc *UserController) AddBookToUser(c *gin.Context) {

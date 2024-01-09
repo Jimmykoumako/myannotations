@@ -1,10 +1,11 @@
 // router.go
-package router
+package routers
 
 import (
 	"github.com/gin-gonic/gin"
 	"mas/middleware"
 	"mas/controllers"
+	"mas/models"
 )
 
 var Router *gin.Engine
@@ -71,6 +72,9 @@ func init() {
 	authGroup.PUT("/connections/:connectionID", connectionController.UpdateConnection)
 	authGroup.DELETE("/connections/:connectionID", connectionController.DeleteConnection)
 	authGroup.POST("/connections/:connectionID/feedback", connectionController.ProvideConnectionFeedback)
+	authGroup.PUT("/connection-feedback/:feedbackID", connectionController.UpdateConnectionFeedback)
+	authGroup.DELETE("/connection-feedback/:feedbackID", connectionController.DeleteConnectionFeedback)
+	
 }
 
 func secureEndpointHandler(c *gin.Context) {

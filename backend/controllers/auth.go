@@ -3,7 +3,6 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jinzhu/gorm"
 	"mas/models"
 	"mas/config"
 	"golang.org/x/crypto/bcrypt"
@@ -11,8 +10,7 @@ import (
 	"time"
 )
 
-// UserController handles user-related operations
-type UserController struct{}
+
 
 // LoginUser handles user login
 func (uc *UserController) LoginUser(c *gin.Context) {

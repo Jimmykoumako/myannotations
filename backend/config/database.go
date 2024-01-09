@@ -1,26 +1,43 @@
-// config/database.go
-
+// config/config.go
 package config
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"log"
+	"os"
 
-    "github.com/jinzhu/gorm"
-    _ "github.com/jinzhu/gorm/dialects/postgres"
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
-// GetDB initializes and returns a connection to the PostgreSQL database.
-func GetDB() (*gorm.DB, error) {
-    url := os.Getenv("POSTGRES_URL")
-    if url == "" {
-        return nil, fmt.Errorf("POSTGRES_URL environment variable not set")
-    }
+var DB *gorm.DB
 
-    db, err := gorm.Open("postgres", url)
-    if err != nil {
-        return nil, err
-    }
+// InitDB initializes the database connection
+func InitDB() {
+	postgresURL := os.Getenv("POSTGRES_URL")
 
-    return db, nil
+	// If running in a Docker container, use the provided environment variables
+	if inDocker := os.Getenv("IN_DOCKER"); inDocker == "true" {
+		postgresURL = "postgres://postgres:postgres@database:5432/madb"
+	}
+
+	conn, err := gorm.Open("postgres", postgresURL)
+	if err != nil {
+		log.Fatal("Failed to connect to the database:", err)
+	}
+
+	DB = conn
+
+	// AutoMigrate your models here if needed
+	// DB.AutoMigrate(&models.User{}, &models.Book{}, ...)
+
+	fmt.Println("Connected to the database")
+}
+
+// CloseDB closes the database connection
+func CloseDB() {
+	if DB != nil {
+		DB.Close()
+		fmt.Println("Closed the database connection")
+	}
 }

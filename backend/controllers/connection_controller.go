@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jinzhu/gorm"
+	"net/http"
 	"mas/models"
 	"mas/config"
 	"strconv"
@@ -92,4 +92,55 @@ func getConnectionIDFromParam(c *gin.Context, param string) uint {
 		return 0
 	}
 	return uint(connectionID)
+}
+
+// GetConnectionFeedbackForConnection retrieves all feedback for a specific connection
+func (cc *ConnectionController) GetConnectionFeedbackForConnection(c *gin.Context) {
+	connectionID := c.Param("connectionID")
+
+	// Query the database for feedback related to the connection
+	var feedback []models.ConnectionFeedback
+	config.DB.Where("connection_id = ?", connectionID).Find(&feedback)
+
+	c.JSON(http.StatusOK, gin.H{"data": feedback})
+}
+
+// GetConnectionFeedbackByUser retrieves all feedback provided by a specific user
+func (cc *ConnectionController) GetConnectionFeedbackByUser(c *gin.Context) {
+	userID := c.Param("userID")
+
+	// Query the database for feedback provided by the user
+	var feedback []models.ConnectionFeedback
+	config.DB.Where("user_id = ?", userID).Find(&feedback)
+
+	c.JSON(http.StatusOK, gin.H{"data": feedback})
+}
+
+func (cc *ConnectionController) UpdateConnectionFeedback(c *gin.Context) {
+	feedbackID := c.Param("feedbackID")
+
+	var feedback models.ConnectionFeedback
+	if err := config.DB.First(&feedback, feedbackID).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Feedback not found"})
+		return
+	}
+
+	// Update the feedback based on the request body
+	if err := c.ShouldBindJSON(&feedback); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	config.DB.Save(&feedback)
+
+	c.JSON(http.StatusOK, gin.H{"data": feedback})
+}
+
+// DeleteConnectionFeedback deletes connection feedback by ID
+func (cc *ConnectionController) DeleteConnectionFeedback(c *gin.Context) {
+	feedbackID := c.Param("feedbackID")
+
+	config.DB.Delete(&models.ConnectionFeedback{}, feedbackID)
+
+	c.JSON(http.StatusNoContent, nil)
 }
