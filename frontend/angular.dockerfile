@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install Angular CLI globally
 RUN npm install -g @angular/cli
 
+# Install ng globally
+RUN npm install -g ng
+
 # Install dependencies
 RUN npm install
 

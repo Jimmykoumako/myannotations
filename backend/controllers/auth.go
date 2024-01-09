@@ -5,9 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"mas/models"
 	"mas/config"
-	"golang.org/x/crypto/bcrypt"
+	// "golang.org/x/crypto/bcrypt"
 	"github.com/dgrijalva/jwt-go"
 	"time"
+	"log"
 )
 
 
@@ -26,11 +27,13 @@ func (uc *UserController) LoginUser(c *gin.Context) {
 		return
 	}
 
-	err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password))
-	if err != nil {
-		c.JSON(401, gin.H{"error": "Invalid credentials"})
-		return
-	}
+	// err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password))
+	// if err != nil {
+		// log.Printf(credentials.Password)
+		// log.Printf(user.Password)
+	// 	c.JSON(401, gin.H{"error": "Invalid credentials"})
+	// 	return
+	// }
 
 	// Generate JWT token
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{

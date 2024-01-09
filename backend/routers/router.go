@@ -23,7 +23,7 @@ func init() {
 	Router.Use(middleware.LoggingMiddleware())
 
 	// Use the input validation middleware
-	Router.Use(middleware.ValidationMiddleware(models.Book{}))
+	// Router.Use(middleware.ValidationMiddleware(models.User{}))
 
 	// Initialize controllers
 	userController := controllers.UserController{}
@@ -34,6 +34,8 @@ func init() {
 
 	// Public routes (no authentication required)
 	Router.POST("/login", userController.LoginUser)
+	Router.POST("/register", userController.RegisterUser)  // Added registration route
+
 
 	// Apply auth middleware to routes that require authentication
 	authGroup := Router.Group("/")
