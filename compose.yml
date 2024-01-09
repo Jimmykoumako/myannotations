@@ -1,6 +1,7 @@
 version: '3'
 services:
   frontend:
+    container_name: masPres
     build:
       context: ./frontend
       dockerfile: ./angular.dockerfile
@@ -8,21 +9,38 @@ services:
       - '4200:4200'
     depends_on:
       - backend
+    
 
   backend:
+    container_name: masAPI
     build:
       context: ./backend
       dockerfile: ./go.dockerfile
     ports:
       - '8080:8080'
     environment:
-      - POSTGRES_URL=postgres://postgres:postgres@database:5432/madb
+      POSTGRES_URL: postgres://postgres:postgres@database:5432/madb?sslmode=disable
     depends_on:
       - database
+    networks:
+      - default
+    
 
   database:
+    container_name: madb
     image: postgres
     environment:
       POSTGRES_DB: madb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - default
+
+volumes:
+  pgdata: {}
+
+networks:
+  default:
+    driver: bridge

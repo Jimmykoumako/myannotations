@@ -3,6 +3,7 @@ package migrations
 
 import (
 	"github.com/jinzhu/gorm"
+	"mas/models"
 )
 
 // CreateUserTable migration
