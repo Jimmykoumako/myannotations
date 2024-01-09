@@ -8,6 +8,7 @@ type User struct {
    Username string `gorm:"unique;not null"`
    Email    string `gorm:"unique;not null"`
    Password string `gorm:"not null"`
+   Token    string `json:"-"`
    Books    []Book   // User has many books
    Annotations []Annotation // User has many annotations
 }

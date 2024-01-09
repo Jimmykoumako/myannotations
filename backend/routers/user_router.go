@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"your_project/controllers"
+	"mas/controllers"
 )
 
 // SetUserRoutes sets up routes for user-related operations

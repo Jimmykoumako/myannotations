@@ -3,8 +3,8 @@ package controllers
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"your_project/models"
-	"your_project/config"
+	"mas/models"
+	"mas/config"
 	"strconv"
 )
 

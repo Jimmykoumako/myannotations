@@ -2,7 +2,6 @@ package main
 
 import (
 	"mas/config"
-	"mas/migrations"
 	"mas/routers"
 )
 
@@ -13,10 +12,8 @@ func main() {
 	// Defer closing the database connection
 	defer config.DB.Close()
 
-	// Apply migrations
-	migrations.RunMigrations()
+	
 
 	// Initialize routes and start the server
-	router := routers.InitializeRoutes()
-	router.Run(":8080")
+	routers.Router.Run(":8080")
 }

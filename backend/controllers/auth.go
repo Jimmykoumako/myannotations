@@ -1,50 +1,53 @@
+// controllers/user_controller.go
 package controllers
 
 import (
-   "mas/models"
-   "golang.org/x/crypto/bcrypt"
-   "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
+	"github.com/jinzhu/gorm"
+	"mas/models"
+	"mas/config"
+	"golang.org/x/crypto/bcrypt"
+	"github.com/dgrijalva/jwt-go"
+	"time"
 )
 
-// RegisterUser registers a new user
-func RegisterUser(c *gin.Context) {
-   var user models.User
-   if err := c.ShouldBindJSON(&user); err != nil {
-      c.JSON(400, gin.H{"error": err.Error()})
-      return
-   }
-
-   // Hash the password before storing it in the database
-   hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
-   if err != nil {
-      c.JSON(500, gin.H{"error": "Failed to hash the password"})
-      return
-   }
-
-   user.Password = string(hashedPassword)
-   models.DB.Create(&user)
-   c.JSON(200, user)
-}
+// UserController handles user-related operations
+type UserController struct{}
 
 // LoginUser handles user login
-func LoginUser(c *gin.Context) {
-   var user models.User
-   if err := c.ShouldBindJSON(&user); err != nil {
-      c.JSON(400, gin.H{"error": err.Error()})
-      return
-   }
+func (uc *UserController) LoginUser(c *gin.Context) {
+	var credentials models.User
+	if err := c.BindJSON(&credentials); err != nil {
+		c.JSON(400, gin.H{"error": "Invalid input"})
+		return
+	}
 
-   // Retrieve the user from the database
-   models.DB.Where("email = ?", user.Email).First(&user)
+	var user models.User
+	if err := config.DB.Where("username = ?", credentials.Username).First(&user).Error; err != nil {
+		c.JSON(401, gin.H{"error": "Invalid credentials"})
+		return
+	}
 
-   // Compare the hashed password with the provided password
-   if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(user.Password)); err != nil {
-      c.JSON(401, gin.H{"error": "Invalid login credentials"})
-      return
-   }
+	err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(credentials.Password))
+	if err != nil {
+		c.JSON(401, gin.H{"error": "Invalid credentials"})
+		return
+	}
 
-   // TODO: Generate and return a JWT token for authenticated users
-   // ...
+	// Generate JWT token
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
+		"id":       user.ID,
+		"username": user.Username,
+		"exp":      time.Now().Add(time.Hour * 24).Unix(), // Token expires in 24 hours
+	})
 
-   c.JSON(200, gin.H{"message": "Login successful"})
+	tokenString, err := token.SignedString([]byte("your_secret_key"))
+	if err != nil {
+		c.JSON(500, gin.H{"error": "Failed to generate token"})
+		return
+	}
+
+	user.Token = tokenString
+
+	c.JSON(200, gin.H{"token": tokenString})
 }

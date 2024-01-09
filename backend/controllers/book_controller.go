@@ -3,38 +3,51 @@ package controllers
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"your_project/models"
-	"your_project/config"
+	"mas/models"
+	"mas/config"
 	"strconv"
 )
 
 // BookController handles book-related operations
 type BookController struct{}
 
-// CreateBook adds a new book to the system
+// CreateBook creates a new book
 func (bc *BookController) CreateBook(c *gin.Context) {
 	var newBook models.Book
-	if err := c.BindJSON(&newBook); err != nil {
-		c.JSON(400, gin.H{"error": "Invalid input"})
+	if err := c.ShouldBindJSON(&newBook); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 
+	// Additional input validation if needed
+	if len(newBook.Title) == 0 || len(newBook.Author) == 0 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Title and author are required"})
+		return
+	}
+
+	// Save the new book to the database
 	config.DB.Create(&newBook)
 
-	c.JSON(201, gin.H{"data": newBook})
+	c.JSON(http.StatusCreated, gin.H{"data": newBook})
 }
 
-// ViewBook retrieves and displays book details
+// ViewBook retrieves a book by ID
 func (bc *BookController) ViewBook(c *gin.Context) {
 	bookID := c.Param("bookID")
 
 	var book models.Book
-	if err := config.DB.Preload("Texts.Annotations").First(&book, bookID).Error; err != nil {
-		c.JSON(404, gin.H{"error": "Book not found"})
+	if err := config.DB.First(&book, bookID).Error; err != nil {
+		if err.Error() == "record not found" {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Book not found"})
+			return
+		}
+		// Log other types of errors
+		fmt.Printf("Error retrieving book: %v\n", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Internal Server Error"})
 		return
 	}
 
-	c.JSON(200, gin.H{"data": book})
+	c.JSON(http.StatusOK, gin.H{"data": book})
 }
 
 // UpdateBook updates book details
