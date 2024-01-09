@@ -12,4 +12,5 @@ type Connection struct {
    TargetAnnotationID uint
    SourceAnnotation Annotation `gorm:"foreignkey:SourceAnnotationID"` // Belongs to a source annotation
    TargetAnnotation Annotation `gorm:"foreignkey:TargetAnnotationID"` // Belongs to a target annotation
+   Feedbacks           []ConnectionFeedback
 }

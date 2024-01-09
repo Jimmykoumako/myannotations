@@ -1,1 +1,0 @@
-CREATE TABLE texts (id SERIAL PRIMARY KEY, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, deleted_at TIMESTAMP, content TEXT NOT NULL, page INTEGER NOT NULL, book_id INTEGER REFERENCES books(id));

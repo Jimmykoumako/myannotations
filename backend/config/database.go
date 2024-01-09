@@ -12,7 +12,7 @@ import (
 
 var DB *gorm.DB
 
-// InitDB initializes the database connection
+/// InitDB initializes the database connection and performs migrations
 func InitDB() {
 	postgresURL := os.Getenv("POSTGRES_URL")
 
@@ -21,17 +21,41 @@ func InitDB() {
 		postgresURL = "postgres://postgres:postgres@database:5432/madb"
 	}
 
+	// Connect to the database
 	conn, err := gorm.Open("postgres", postgresURL)
 	if err != nil {
 		log.Fatal("Failed to connect to the database:", err)
 	}
 
+	// Set the global DB variable
 	DB = conn
 
-	// AutoMigrate your models here if needed
-	// DB.AutoMigrate(&models.User{}, &models.Book{}, ...)
+	// Perform database migrations
+	if err := migrations.CreateUserTable(DB); err != nil {
+		log.Fatal("Failed to migrate User table:", err)
+	}
 
-	fmt.Println("Connected to the database")
+	if err := migrations.CreateBookTable(DB); err != nil {
+		log.Fatal("Failed to migrate Book table:", err)
+	}
+
+	if err := migrations.CreateTextTable(DB); err != nil {
+		log.Fatal("Failed to migrate Text table:", err)
+	}
+
+	if err := migrations.CreateAnnotationTable(DB); err != nil {
+		log.Fatal("Failed to migrate Annotation table:", err)
+	}
+
+	if err := migrations.CreateConnectionTable(DB); err != nil {
+		log.Fatal("Failed to migrate Connection table:", err)
+	}
+
+	if err := migrations.CreateConnectionFeedbackTable(DB); err != nil {
+		log.Fatal("Failed to migrate ConnectionFeedback table:", err)
+	}
+
+	fmt.Println("Database initialization and migrations completed")
 }
 
 // CloseDB closes the database connection

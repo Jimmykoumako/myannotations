@@ -1,1 +1,0 @@
-CREATE TABLE connections (id SERIAL PRIMARY KEY, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, deleted_at TIMESTAMP, relationship_type VARCHAR(255) NOT NULL, timestamp INTEGER, user_id INTEGER REFERENCES users(id), source_annotation_id INTEGER REFERENCES annotations(id), target_annotation_id INTEGER REFERENCES annotations(id));

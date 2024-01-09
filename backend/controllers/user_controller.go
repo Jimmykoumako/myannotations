@@ -23,7 +23,6 @@ func (uc *UserController) RegisterUser(c *gin.Context) {
 	c.JSON(201, gin.H{"data": newUser})
 }
 
-
 // AddBookToUser adds a new book to the user's collection
 func (uc *UserController) AddBookToUser(c *gin.Context) {
 	userID := c.Param("userID")
@@ -61,7 +60,6 @@ func getUserIDFromParam(c *gin.Context, param string) uint {
 	}
 	return uint(userID)
 }
-
 
 // CreateUser creates a new user
 func (uc *UserController) CreateUser(c *gin.Context) {
