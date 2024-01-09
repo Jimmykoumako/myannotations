@@ -39,7 +39,7 @@ func init() {
 
 	// Apply auth middleware to routes that require authentication
 	authGroup := Router.Group("/")
-	authGroup.Use(middleware.AuthMiddleware())
+	// authGroup.Use(middleware.AuthMiddleware())
 
 	// User-related routes
 	authGroup.GET("/secure-endpoint", secureEndpointHandler)
